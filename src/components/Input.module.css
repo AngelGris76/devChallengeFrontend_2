@@ -1,0 +1,100 @@
+.component,
+.multilineComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.labelText {
+  color: rgb(51, 51, 51);
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.input {
+  font-family: inherit;
+  border: 1px solid rgb(130, 130, 130);
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.input::placeholder {
+  color: rgb(130, 130, 130);
+}
+
+.smallSize {
+  padding: 0.62rem 0.75rem;
+}
+
+.mediumSize {
+  padding: 1.13rem 0.75rem;
+}
+
+.input:focus {
+  border-color: rgb(41, 98, 255);
+}
+
+.input[aria-invalid] {
+  border-color: rgb(211, 47, 47);
+}
+
+.error {
+  color: rgb(211, 47, 47);
+}
+
+.component:hover > .labelText {
+  color: rgb(51, 51, 51);
+}
+
+.component:hover > .inputContainer > .input {
+  border-color: rgb(51, 51, 51);
+}
+
+.input:disabled {
+  background: rgb(242, 242, 242);
+  border-color: rgb(224, 224, 224);
+}
+
+.component:hover > .inputContainer > .input:disabled {
+  border-color: rgb(224, 224, 224);
+}
+
+.startIcon,
+.endIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.startIcon {
+  left: 1rem;
+}
+
+.endIcon {
+  right: 1rem;
+}
+
+.fullWidth {
+  display: block;
+  width: 100%;
+}
+
+.multilineText {
+  resize: none;
+  border: 1px solid rgb(130, 130, 130);
+  border-radius: 0.5rem;
+}
+
+.multilineComponent:hover > .multilineText {
+  border-color: rgb(51, 51, 51);
+}
+
+.multilineText:focus {
+  border-color: rgb(41, 98, 255);
+  outline: none;
+}
