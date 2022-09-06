@@ -51,16 +51,12 @@
   color: rgb(51, 51, 51);
 }
 
-.component:hover > .inputContainer > .input {
+.input:hover {
   border-color: rgb(51, 51, 51);
 }
 
 .input:disabled {
   background: rgb(242, 242, 242);
-  border-color: rgb(224, 224, 224);
-}
-
-.component:hover > .inputContainer > .input:disabled {
   border-color: rgb(224, 224, 224);
 }
 
